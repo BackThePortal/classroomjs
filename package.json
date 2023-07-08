@@ -1,0 +1,31 @@
+{
+  "name": "@backtheportal/classroomjs-root",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/docs",
+    "packages/classroomjs",
+    "packages/playground"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev packages/docs",
+    "docs:build": "vitepress build packages/docs",
+    "docs:api": "node ./packages/docs/run-typedoc.js",
+    "docs:preview": "vitepress preview packages/docs",
+    "core:dev": "tsc --project ./packages/classroomjs/tsconfig.json --watch",
+    "core:build": "tsc --project ./packages/classroomjs/tsconfig.json"
+    "playground":"vite ./packages/playground"
+  },
+  "author": "backtheportal",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "typedoc": "^0.24.8",
+    "typedoc-plugin-markdown": "^3.15.3"
+  },
+  "prettier": {
+    "useTabs": true,
+    "singleQuote": true
+  }
+}

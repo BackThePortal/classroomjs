@@ -1,0 +1,16 @@
+{
+  "name": "classroomjs",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "JavaScript library for classroom creation",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "author": "BackThePortal",
+  "license": "MIT"
+}
